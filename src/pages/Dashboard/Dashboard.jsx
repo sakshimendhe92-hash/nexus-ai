@@ -8,8 +8,8 @@ import {
   FaHistory,
 } from "react-icons/fa";
 
-import Sidebar from "../../components/Dashboard/Sidebar";
-import Topbar from "../../components/Dashboard/Topbar";
+import Sidebar from "../../components/dashboard/Sidebar";
+import Topbar from "../../components/dashboard/Topbar";
 
 function Dashboard() {
   const navigate = useNavigate();

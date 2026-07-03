@@ -13,7 +13,7 @@ import Testimonials from "./components/Testimonials/Testimonials";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 
-import Login from "./pages/Login/Login";
+import Login from "./pages/login/Login";
 import Signup from "./pages/Signup/Signup";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import AIChat from "./pages/AIChat/AIChat";
