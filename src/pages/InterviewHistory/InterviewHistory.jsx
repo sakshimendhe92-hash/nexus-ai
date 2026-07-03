@@ -11,7 +11,7 @@ function InterviewHistory() {
   const loadInterviews = async () => {
     try {
       const res = await axios.get(
-        "http://nexus-ai-backend-qde1.onrender.com/api/interview",
+        "https://nexus-ai-backend-qde1.onrender.com/api/interview",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -36,7 +36,7 @@ function InterviewHistory() {
 
     try {
       await axios.delete(
-        `http://localhost:5000/api/interview/${id}`,
+        `https://nexus-ai-backend-qde1.onrender.com/api/interview/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

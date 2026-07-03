@@ -16,7 +16,7 @@ function Interview() {
       setLoading(true);
 
       const res = await axios.post(
-        "http://nexus-ai-backend-qde1.onrender.com/api/interview/generate",
+        "https://nexus-ai-backend-qde1.onrender.com/api/interview/generate",
         {
           interviewType,
           language,

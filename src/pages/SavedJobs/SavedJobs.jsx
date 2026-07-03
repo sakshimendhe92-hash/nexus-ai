@@ -12,7 +12,7 @@ function SavedJobs() {
   const loadJobs = async () => {
     try {
       const res = await axios.get(
-        "http://nexus-ai-backend-qde1.onrender.com/api/jobs",
+        "https://nexus-ai-backend-qde1.onrender.com/api/jobs",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -36,7 +36,7 @@ function SavedJobs() {
   const deleteJob = async (id) => {
     try {
       await axios.delete(
-        `http://localhost:5000/api/jobs/${id}`,
+        `https://nexus-ai-backend-qde1.onrender.com/api/jobs/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

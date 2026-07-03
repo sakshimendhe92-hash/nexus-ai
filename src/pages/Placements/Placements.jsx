@@ -9,7 +9,7 @@ function Placements() {
 
   const loadJobs = async () => {
     try {
-      const res = await axios.get("http://nexus-ai-backend-qde1.onrender.com/api/jobs", {
+      const res = await axios.get("https://nexus-ai-backend-qde1.onrender.com/api/jobs", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

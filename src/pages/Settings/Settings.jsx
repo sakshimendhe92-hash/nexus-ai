@@ -28,7 +28,7 @@ function Settings() {
   const updateProfile = async () => {
     try {
       const res = await axios.put(
-        "http://nexus-ai-backend-qde1.onrender.com/api/user/profile",
+        "https://nexus-ai-backend-qde1.onrender.com/api/user/profile",
         {
           name,
         },
@@ -74,7 +74,7 @@ function Settings() {
 
     try {
       const res = await axios.put(
-        "http://nexus-ai-backend-qde1.onrender.com/api/user/password",
+        "https://nexus-ai-backend-qde1.onrender.com/api/user/password",
         {
           currentPassword,
           newPassword,
@@ -130,7 +130,7 @@ function Settings() {
       formData.append("profileImage", image);
 
       const res = await axios.put(
-        "http://localhost:5000/api/user/profile-image",
+        "https://nexus-ai-backend-qde1.onrender.com/api/user/profile-image",
         formData,
         {
           headers: {
