@@ -18,7 +18,7 @@ const [password, setPassword] = useState("");
   const loginUser = async () => {
   try {
     const res = await axios.post(
-      "http://localhost:5000/api/auth/login",
+      "http://nexus-ai-backend-qde1.onrender.com/api/auth/login",
       {
         email,
         password,

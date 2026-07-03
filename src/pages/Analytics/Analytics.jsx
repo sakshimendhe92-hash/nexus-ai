@@ -20,7 +20,7 @@ function Analytics() {
 
       try {
         const res = await axios.get(
-          "http://localhost:5000/api/admin/analytics",
+          "https://nexus-ai-backend-qde1.onrender.com/api/admin/analytics",
           {
             headers: {
               Authorization: `Bearer ${token}`,

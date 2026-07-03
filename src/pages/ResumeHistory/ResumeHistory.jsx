@@ -11,7 +11,7 @@ function ResumeHistory() {
   const loadResumes = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/resume",
+        "http://nexus-ai-backend-qde1.onrender.com/api/resume",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -41,7 +41,7 @@ function ResumeHistory() {
 
     try {
       await axios.delete(
-        `http://localhost:5000/api/resume/${id}`,
+        `http://nexus-ai-backend-qde1.onrender.com/api/resume/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -143,7 +143,7 @@ function ResumeHistory() {
                 <button
                   onClick={() =>
                     window.open(
-                      `http://localhost:5000/api/resume/${resume._id}`,
+                      `http://nexus-ai-backend-qde1.onrender.com/api/resume/${resume._id}`,
                       "_blank"
                     )
                   }

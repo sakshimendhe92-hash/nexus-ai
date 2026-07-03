@@ -17,7 +17,7 @@ function Admin() {
   });
 
   const loadJobs = async () => {
-    const res = await axios.get("http://localhost:5000/api/admin/jobs");
+    const res = await axios.get("http://nexus-ai-backend-qde1.onrender.com/api/admin/jobs");
     setJobs(res.data);
   };
 
@@ -34,7 +34,7 @@ function Admin() {
 
   const addJob = async () => {
     await axios.post(
-      "http://localhost:5000/api/admin/job",
+      "http://nexus-ai-backend-qde1.onrender.com/api/admin/job",
       formData
     );
 
@@ -56,7 +56,7 @@ function Admin() {
 
   const deleteJob = async (id) => {
     await axios.delete(
-      `http://localhost:5000/api/admin/job/${id}`
+      `http://nexus-ai-backend-qde1.onrender.com/api/admin/job/${id}`
     );
 
     loadJobs();

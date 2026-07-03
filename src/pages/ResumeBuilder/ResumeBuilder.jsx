@@ -29,7 +29,7 @@ function ResumeBuilder() {
       setLoading(true);
 
       const res = await axios.post(
-        "http://localhost:5000/api/resume/generate",
+        "http://nexus-ai-backend-qde1.onrender.com/api/resume/generate",
         formData,
         {
           headers: {

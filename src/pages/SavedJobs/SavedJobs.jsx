@@ -12,7 +12,7 @@ function SavedJobs() {
   const loadJobs = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/jobs",
+        "http://nexus-ai-backend-qde1.onrender.com/api/jobs",
         {
           headers: {
             Authorization: `Bearer ${token}`,

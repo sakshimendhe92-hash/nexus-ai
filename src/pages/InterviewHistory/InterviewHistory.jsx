@@ -11,7 +11,7 @@ function InterviewHistory() {
   const loadInterviews = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/interview",
+        "http://nexus-ai-backend-qde1.onrender.com/api/interview",
         {
           headers: {
             Authorization: `Bearer ${token}`,

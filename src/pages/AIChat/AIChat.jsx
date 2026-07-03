@@ -11,7 +11,7 @@ const token = localStorage.getItem("token");
   const loadChats = async () => {
     try {
       const res = await axios.get(
-  "http://localhost:5000/api/ai/history",
+  "http://nexus-ai-backend-qde1.onrender.com/api/ai/history",
   {
     headers: {
       Authorization: `Bearer ${token}`,
@@ -54,7 +54,7 @@ const token = localStorage.getItem("token");
       setLoading(true);
 
       await axios.post(
-  "http://localhost:5000/api/ai/chat",
+  "http://nexus-ai-backend-qde1.onrender.com/api/ai/chat",
   {
     message: currentMessage,
   },
